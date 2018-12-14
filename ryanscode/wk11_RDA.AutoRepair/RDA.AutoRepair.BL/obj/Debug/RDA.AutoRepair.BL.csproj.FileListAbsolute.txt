@@ -1,0 +1,14 @@
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.BL.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.BL.pdb
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.csproj.CoreCompileInputs.cache
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.BL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.BL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.csproj.CoreCompileInputs.cache
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.csprojAssemblyReference.cache
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.PL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\bin\Debug\RDA.AutoRepair.PL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL\obj\Debug\RDA.AutoRepair.BL.csproj.CopyComplete

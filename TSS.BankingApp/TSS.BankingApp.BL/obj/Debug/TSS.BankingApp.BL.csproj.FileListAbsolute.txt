@@ -1,0 +1,9 @@
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.csprojAssemblyReference.cache
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.Properties.Resources.resources
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.csproj.GenerateResource.cache
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.csproj.CoreCompileInputs.cache
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\bin\Debug\TSS.BankingApp.BL.exe.config
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\bin\Debug\TSS.BankingApp.BL.exe
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\bin\Debug\TSS.BankingApp.BL.pdb
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.exe
+C:\repos\bankingapp\TSS.BankingApp\TSS.BankingApp.BL\obj\Debug\TSS.BankingApp.BL.pdb

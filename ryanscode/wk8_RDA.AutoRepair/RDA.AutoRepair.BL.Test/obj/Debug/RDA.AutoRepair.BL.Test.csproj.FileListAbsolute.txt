@@ -1,0 +1,31 @@
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.Test.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.Test.pdb
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.pdb
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.csprojAssemblyReference.cache
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.csproj.CoreCompileInputs.cache
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.csproj.CopyComplete
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.dll
+C:\Users\appel\Source\Repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.Test.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.Test.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\RDA.AutoRepair.BL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.xml
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\bin\Debug\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.xml
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.csprojResolveAssemblyReference.cache
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.csproj.CoreCompileInputs.cache
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.BL.Test\obj\Debug\RDA.AutoRepair.BL.Test.pdb

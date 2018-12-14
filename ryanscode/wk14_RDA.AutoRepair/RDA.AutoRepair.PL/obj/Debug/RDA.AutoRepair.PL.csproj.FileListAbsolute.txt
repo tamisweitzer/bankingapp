@@ -1,0 +1,6 @@
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\bin\Debug\RDA.AutoRepair.PL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\bin\Debug\RDA.AutoRepair.PL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\obj\Debug\RDA.AutoRepair.PL.csproj.CoreCompileInputs.cache
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\obj\Debug\RDA.AutoRepair.PL.dll
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\obj\Debug\RDA.AutoRepair.PL.pdb
+\\appdata4.fvtc.edu\userdata$\appel\Documents\Visual Studio 2017\Projects\Fall 18\RDA.AutoRepair\RDA.AutoRepair.PL\obj\Debug\RDA.AutoRepair.PL.csprojResolveAssemblyReference.cache

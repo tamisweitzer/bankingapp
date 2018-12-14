@@ -52,7 +52,6 @@
     <Compile Include="BankingAppForm.Designer.cs">
       <DependentUpon>BankingAppForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BankingAppForm.resx">
@@ -79,6 +78,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TSS.BankingApp.BL\TSS.BankingApp.BL.csproj">
+      <Project>{bee0eb5e-47cc-4943-a8c0-fce859e87126}</Project>
+      <Name>TSS.BankingApp.BL</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
