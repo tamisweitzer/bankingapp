@@ -15,18 +15,17 @@ namespace TSS.BankingApp.BL
 
         // Properties
         public int CustomerID { get; set; }
-        public Deposit LastDeposit { get; set;}  
-        public Withdrawl LastWithdrawl { get; set; }   
-        public List<Deposit> DepositList { get; set; } 
-        public List<Withdrawl> WithdrawlList { get; set; }  
-
+        public Deposit LastDeposit { get; set; }
+        public Withdrawl LastWithdrawl { get; set; }
+        public List<Deposit> DepositList { get; set; }
+        public List<Withdrawl> WithdrawlList { get; set; }
+       
 
         // Constructors 
         public Customer()
         {
             DepositList = new List<Deposit>();
             WithdrawlList = new List<Withdrawl>();
-
         }
 
         public Customer( int customerid)
@@ -62,15 +61,6 @@ namespace TSS.BankingApp.BL
 
         }
 
-        public Customer(DataRow datarow)
-        {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
-            ID = Convert.ToString(datarow["ID"]);
-            Amount = Convert.ToString(datarow["Amount"]);
-            DateTime = Convert.ToString(datarow["Date"]);
-
-        }
 
     }
 }
