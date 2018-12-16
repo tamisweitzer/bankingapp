@@ -1,0 +1,11 @@
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\bin\Debug\IntermediateDemoWeek3.exe.config
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\bin\Debug\IntermediateDemoWeek3.exe
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\bin\Debug\IntermediateDemoWeek3.pdb
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.csprojResolveAssemblyReference.cache
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.ColorForm.resources
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.Properties.Resources.resources
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.csproj.GenerateResource.Cache
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.exe
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.pdb
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.MainForm.resources
+C:\SoftwareDev\Appel_Fall18\IntermediateDemoWeek3\IntermediateDemoWeek3\obj\Debug\IntermediateDemoWeek3.NewNameForm.resources

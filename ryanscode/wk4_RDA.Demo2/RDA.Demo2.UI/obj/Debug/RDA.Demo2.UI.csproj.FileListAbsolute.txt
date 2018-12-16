@@ -1,0 +1,10 @@
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.csprojAssemblyReference.cache
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.Form1.resources
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.Properties.Resources.resources
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.csproj.GenerateResource.cache
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.csproj.CoreCompileInputs.cache
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\bin\Debug\RDA.Demo2.UI.exe.config
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\bin\Debug\RDA.Demo2.UI.exe
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\bin\Debug\RDA.Demo2.UI.pdb
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.exe
+C:\Users\appel\source\repos\RDA-Intermediate-InClass\RDA.Demo2\RDA.Demo2.UI\obj\Debug\RDA.Demo2.UI.pdb
