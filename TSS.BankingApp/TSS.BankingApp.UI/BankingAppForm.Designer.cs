@@ -55,34 +55,33 @@
             this.lstbxCustomersList.FormattingEnabled = true;
             this.lstbxCustomersList.ItemHeight = 17;
             this.lstbxCustomersList.Location = new System.Drawing.Point(24, 20);
-            this.lstbxCustomersList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lstbxCustomersList.Margin = new System.Windows.Forms.Padding(2);
             this.lstbxCustomersList.Name = "lstbxCustomersList";
             this.lstbxCustomersList.Size = new System.Drawing.Size(280, 259);
             this.lstbxCustomersList.TabIndex = 0;
+            this.lstbxCustomersList.SelectedIndexChanged += new System.EventHandler(this.lstbxCustomersList_SelectedIndexChanged_1);
             // 
             // DgvDeposits
             // 
             this.DgvDeposits.AllowUserToOrderColumns = true;
             this.DgvDeposits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvDeposits.Location = new System.Drawing.Point(24, 325);
-            this.DgvDeposits.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvDeposits.Margin = new System.Windows.Forms.Padding(2);
             this.DgvDeposits.Name = "DgvDeposits";
             this.DgvDeposits.RowTemplate.Height = 33;
             this.DgvDeposits.Size = new System.Drawing.Size(592, 134);
             this.DgvDeposits.TabIndex = 1;
-           
             // 
             // DgvWithdrawls
             // 
             this.DgvWithdrawls.AllowUserToOrderColumns = true;
             this.DgvWithdrawls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DgvWithdrawls.Location = new System.Drawing.Point(24, 494);
-            this.DgvWithdrawls.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DgvWithdrawls.Margin = new System.Windows.Forms.Padding(2);
             this.DgvWithdrawls.Name = "DgvWithdrawls";
             this.DgvWithdrawls.RowTemplate.Height = 33;
             this.DgvWithdrawls.Size = new System.Drawing.Size(592, 133);
             this.DgvWithdrawls.TabIndex = 2;
-            
             // 
             // lblID
             // 
@@ -159,7 +158,7 @@
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtFirstName.Location = new System.Drawing.Point(466, 57);
-            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(152, 24);
             this.txtFirstName.TabIndex = 9;
@@ -168,7 +167,7 @@
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtLastName.Location = new System.Drawing.Point(466, 94);
-            this.txtLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(152, 24);
             this.txtLastName.TabIndex = 10;
@@ -177,7 +176,7 @@
             // 
             this.txtSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSSN.Location = new System.Drawing.Point(466, 132);
-            this.txtSSN.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSSN.Margin = new System.Windows.Forms.Padding(2);
             this.txtSSN.Name = "txtSSN";
             this.txtSSN.Size = new System.Drawing.Size(152, 24);
             this.txtSSN.TabIndex = 11;
@@ -207,11 +206,10 @@
             // 
             this.txtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBirthDate.Location = new System.Drawing.Point(466, 168);
-            this.txtBirthDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBirthDate.Margin = new System.Windows.Forms.Padding(2);
             this.txtBirthDate.Name = "txtBirthDate";
             this.txtBirthDate.Size = new System.Drawing.Size(152, 24);
             this.txtBirthDate.TabIndex = 14;
-            
             // 
             // LblWithdrawls
             // 
@@ -222,7 +220,6 @@
             this.LblWithdrawls.Size = new System.Drawing.Size(81, 18);
             this.LblWithdrawls.TabIndex = 15;
             this.LblWithdrawls.Text = "Withdrawls";
-            
             // 
             // LblDeposits
             // 
@@ -233,7 +230,6 @@
             this.LblDeposits.Size = new System.Drawing.Size(67, 18);
             this.LblDeposits.TabIndex = 16;
             this.LblDeposits.Text = "Deposits";
-            
             // 
             // BankingAppForm
             // 
@@ -257,7 +253,7 @@
             this.Controls.Add(this.DgvWithdrawls);
             this.Controls.Add(this.DgvDeposits);
             this.Controls.Add(this.lstbxCustomersList);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "BankingAppForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TSS.BankingApp";

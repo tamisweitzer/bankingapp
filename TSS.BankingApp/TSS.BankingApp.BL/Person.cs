@@ -10,7 +10,7 @@ namespace TSS.BankingApp.BL
         public string SSN { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string FullName { get { return (FirstName + " " + LastName); } }
+        public string FullName { get { return FirstName + " " + LastName; } }
         public int Age {
             get {
                 DateTime CurrentYear = new DateTime();
@@ -18,6 +18,7 @@ namespace TSS.BankingApp.BL
             }
         }
         public DateTime BirthDate { get; set; }
+
 
 
        // Constructors

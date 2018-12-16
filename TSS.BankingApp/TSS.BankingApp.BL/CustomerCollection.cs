@@ -21,8 +21,9 @@ namespace TSS.BankingApp.BL
             c.CustomerID = 100;
             c.FirstName = "Mary";
             c.LastName = "Swan";
-            c.BirthDate = new DateTime(12, 04, 1960);
-            c.LastDeposit = new Deposit();
+            c.SSN = "327-51-5847";
+            c.BirthDate = new DateTime();
+            c.LastDeposit = new Deposit(150.57);
             c.LastWithdrawl = new Withdrawl();
             Add(c);
 
@@ -31,8 +32,9 @@ namespace TSS.BankingApp.BL
             c.CustomerID = 200;
             c.FirstName = "Jeremy";
             c.LastName = "Swanson";
-            c.BirthDate = new DateTime(01, 07, 1971);
-            c.LastDeposit = new Deposit();
+            c.SSN = "327-62-6958";
+            c.BirthDate = new DateTime();
+            c.LastDeposit = new Deposit(3501.98);
             c.LastWithdrawl = new Withdrawl();
             Add(c);
 
@@ -41,8 +43,9 @@ namespace TSS.BankingApp.BL
             c.CustomerID = 300;
             c.FirstName = "Kelly";
             c.LastName = "Green";
-            c.BirthDate = new DateTime(06, 23, 1976);
-            c.LastDeposit = new Deposit();
+            c.SSN = "327-73-7069";
+            c.BirthDate = new DateTime();
+            c.LastDeposit = new Deposit(65.37);
             c.LastWithdrawl = new Withdrawl();
             Add(c);
         }

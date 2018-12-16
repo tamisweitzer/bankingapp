@@ -11,5 +11,12 @@ namespace TSS.BankingApp.BL
         public int ID;
         public double Amount;
         public DateTime Date;
+
+        public Deposit(double amount)
+        {
+            amount = Amount;
+            Date = new DateTime();
+        }
+
     }
 }
