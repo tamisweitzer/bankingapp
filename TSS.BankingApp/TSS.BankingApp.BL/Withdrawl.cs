@@ -8,15 +8,14 @@ namespace TSS.BankingApp.BL
 {
     public class Withdrawl
     {
-        // props
-        public int ID;
-        public double Amount;
-        public DateTime Date;
+        
+        public int WithdrawlID { get; set; }
+        public double Amount { get; set; }
+        public DateTime Date { get; set; }
 
         public Withdrawl(double amount)
         {
             Amount = amount;
-            Date = new DateTime();
         }
     }
 }

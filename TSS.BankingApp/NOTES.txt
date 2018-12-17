@@ -1,0 +1,7 @@
+
+#1
+ - main form contains a listbox of customers displaying full name :DONE
+ - selection of a customer populates their data in the textboxes :DONE
+ - on selected, customer's withdrawls and deposits populate datagridview :TODO - ONLY WORKS IF HARD CODED AND ONE LINE ITEM
+ - customercollection populate method called on load. :DONE
+	- creates three customers with 3 deposits and 3 withdrawls :TODO - NOT ADDING DEP/WDRL CORRECTLY YET

@@ -29,7 +29,7 @@ namespace TSS.BankingApp.BL
             WithdrawlList = new List<Withdrawl>();
         }
 
-        public Customer( int customerid)
+        public Customer(int customerid)
         {
             DepositList = new List<Deposit>();
             WithdrawlList = new List<Withdrawl>();
@@ -44,25 +44,25 @@ namespace TSS.BankingApp.BL
             LastDeposit = lastdeposit;
         }
 
-        public Customer(int customerid, Withdrawl lastwithdrawl)
-        {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
-            CustomerID = customerid;
-            LastWithdrawl = lastwithdrawl;
-        }
+        //public Customer(int customerid, Withdrawl lastwithdrawl)
+        //{
+        //    DepositList = new List<Deposit>();
+        //    WithdrawlList = new List<Withdrawl>();
+        //    CustomerID = customerid;
+        //    LastWithdrawl = lastwithdrawl;
+        //}
 
-        public Customer(int customerid, Deposit lastdeposit, Withdrawl lastwithdrawl)
-        {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
-            CustomerID = customerid;
-            LastDeposit = lastdeposit;
-            LastWithdrawl = lastwithdrawl;
+        //public Customer(int customerid, Deposit lastdeposit, Withdrawl lastwithdrawl)
+        //{
+        //    DepositList = new List<Deposit>();
+        //    WithdrawlList = new List<Withdrawl>();
+        //    CustomerID = customerid;
+        //    LastDeposit = lastdeposit;
+        //    LastWithdrawl = lastwithdrawl;
 
-        }
+        //}
 
 
-        
+
     }
 }

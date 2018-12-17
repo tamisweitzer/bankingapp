@@ -22,31 +22,41 @@ namespace TSS.BankingApp.UI
         {
             customers.Populate();
             RebindCustomers();
+            // TODO
+            // This isn't right yet. Data populates, 
+            // but this does not create a list of withdrawls and deposits
 
             DataTable dt = new DataTable();
-            dt.Columns.Add("FirstName");
+            //dt.Columns.Add("FirstName");
             dt.Columns.Add("LastName");
-            dt.Columns.Add("SSN");
-            dt.Columns.Add("Birthdate");
+            //dt.Columns.Add("SSN");
+            //dt.Columns.Add("Birthdate");
             dt.Columns.Add("LastDeposit");
+            //dt.Columns.Add("DepositID");
+            //dt.Columns.Add("Amount");
+            //dt.Columns.Add("Date");
+
             foreach (var i in customers)
             {
                 dt.Rows.Add(new object[] {
-                    i.FirstName,
                     i.LastName,
-                    i.SSN,
-                    i.BirthDate.ToShortDateString(),
-                    i.LastDeposit.Amount.ToString("c") });
+                    i.LastDeposit.Amount.ToString("c")
+                    
+                });
             }
             DgvDeposits.DataSource = dt;
 
 
+            // Withdrawl table
+            // TODO turn these two into a method
             DataTable dt2 = new DataTable();
             dt2.Columns.Add("FirsttName");
             dt2.Columns.Add("LastName");
             dt2.Columns.Add("SSN");
             dt2.Columns.Add("Birthdate");
             dt2.Columns.Add("LastWithdrawl");
+            dt2.Columns.Add("LastDeposit");
+
             foreach (var i in customers)
             {
                 dt2.Rows.Add(new object[] {
@@ -54,7 +64,9 @@ namespace TSS.BankingApp.UI
                     i.LastName,
                     i.SSN,
                     i.BirthDate.ToShortDateString(),
-                    i.LastWithdrawl.Amount.ToString("c") });
+                    i.LastWithdrawl.Amount.ToString("c"),
+                    i.LastDeposit.Amount.ToString("c")
+                });
             }
             DgvWithdrawls.DataSource = dt2;
         }

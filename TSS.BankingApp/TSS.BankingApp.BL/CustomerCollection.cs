@@ -24,7 +24,7 @@ namespace TSS.BankingApp.BL
             c.SSN = "327-51-5847";
             c.BirthDate = new DateTime(1959, 01, 06);
             c.LastDeposit = new Deposit(150.57);
-            c.LastWithdrawl = new Withdrawl(25.00);
+            c.LastWithdrawl = new Withdrawl(6958.21);
             Add(c);
 
 
