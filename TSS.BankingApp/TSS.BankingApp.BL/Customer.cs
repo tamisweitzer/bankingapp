@@ -11,6 +11,7 @@ namespace TSS.BankingApp.BL
     {
         // Field 
         private DataRow datarow;
+        private object DisplayName;
 
 
         // Properties
@@ -62,5 +63,6 @@ namespace TSS.BankingApp.BL
         }
 
 
+        
     }
 }

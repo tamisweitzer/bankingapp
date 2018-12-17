@@ -8,13 +8,14 @@ namespace TSS.BankingApp.BL
 {
     public class Deposit
     {
+        // props
         public int ID;
         public double Amount;
         public DateTime Date;
 
         public Deposit(double amount)
         {
-            amount = Amount;
+            Amount = amount;
             Date = new DateTime();
         }
 
