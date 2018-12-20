@@ -153,5 +153,36 @@ namespace TSS.BankingApp.UI
         {
 
         }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            lblDisplayID.Text = "";
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
+            txtSSN.Text = "";
+            //dtBirthDate.Value = DateTimePicker.MinimumDateTime;
+            dtBirthDate.Value = DateTime.Now;
+            lblDisplayAge.Text = "";
+        }
+
+        private void btnSaveToXML_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLoadFromXML_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSaveToDB_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReadFromDB_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

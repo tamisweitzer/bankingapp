@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TSS.BankingApp.BL;
+using System.Data.SqlClient;
+
 
 namespace TSS.BankingApp.BL
 {
@@ -12,11 +14,9 @@ namespace TSS.BankingApp.BL
 
         public void Populate()
         {
-            // create three customers w/ 3 dep, and 3 withdrawls each 
-
             Customer c;
 
-            // when it's all hardcoded, everything loads
+            // when it's all hardcoded, everything loads, usually
             // 1st Customer
             c = new Customer();
             c.CustomerID = 100;
@@ -27,26 +27,7 @@ namespace TSS.BankingApp.BL
             c.LastDeposit = new Deposit(150.57, new DateTime(2017, 01, 02));
             c.LastWithdrawl = new Withdrawl(6958.21);
             Add(c);
-
-            ////  Customer
-            //c = new Customer();
-            //c.CustomerID = 100;
-            //c.FirstName = "Mary";
-            //c.LastName = "Swan";
-            //c.SSN = "327-51-5847";
-            //c.BirthDate = new DateTime(1959, 01, 06);
-            ////c.DepositList.Add(new Deposit()
-            ////{
-            ////    DepositID = 10010,
-            ////    Amount = 516.24,
-            ////    Date = new DateTime(2018, 12, 19)});
-            //// Hard coding these because I don't know how to make the list work
-            //c.LastDeposit = new Deposit(150.57, new DateTime(2018, 10, 15));
-            ////c.LastDeposit.DepositDate = new DateTime(2018, 11, 24);
-            //c.LastWithdrawl = new Withdrawl(6958.21);
-            //c.LastWithdrawl.WithdrawlDate = new DateTime(2018, 11, 25);
-            //Add(c);
-
+            
 
             // 2nd Customer
             c = new Customer();
@@ -72,7 +53,24 @@ namespace TSS.BankingApp.BL
                 DepositAmount = 1107.54,
                 DepositDate = new DateTime(2018, 10, 29)
             });
-            // do withdrawl
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 20020,
+                WithdrawlAmount = 100.01,
+                WithdrawlDate = new DateTime(2018,11,01)
+            });
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 20021,
+                WithdrawlAmount = 27.62,
+                WithdrawlDate = new DateTime(2018, 11, 13)
+            });
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 20022,
+                WithdrawlAmount = 592.38,
+                WithdrawlDate = new DateTime(2018, 11, 14)
+            });
             Add(c);
 
 
@@ -83,15 +81,49 @@ namespace TSS.BankingApp.BL
             c.LastName = "Green";
             c.SSN = "327-73-7069";
             c.BirthDate = new DateTime(1982, 11, 25);
-            c.LastDeposit = new Deposit(65.37, new DateTime(2018, 10, 25));
-            c.LastWithdrawl = new Withdrawl(951.55);
+            c.Deposits.Add(new Deposit()
+            {
+                DepositID = 30010,
+                DepositAmount = 3501.98,
+                DepositDate = new DateTime(2018, 10, 11),
+            });
+            c.Deposits.Add(new Deposit()
+            {
+                DepositID = 30011,
+                DepositAmount = 1203.72,
+                DepositDate = new DateTime(2018, 10, 24)
+            });
+            c.Deposits.Add(new Deposit()
+            {
+                DepositID = 30012,
+                DepositAmount = 1107.54,
+                DepositDate = new DateTime(2018, 10, 29)
+            });
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 30020,
+                WithdrawlAmount = 100.01,
+                WithdrawlDate = new DateTime(2018, 11, 01)
+            });
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 30021,
+                WithdrawlAmount = 27.62,
+                WithdrawlDate = new DateTime(2018, 11, 13)
+            });
+            c.Withdrawls.Add(new Withdrawl()
+            {
+                WithdrawlID = 30022,
+                WithdrawlAmount = 592.38,
+                WithdrawlDate = new DateTime(2018, 11, 14)
+            });
             Add(c);
         }
+
 
         public int IncrementID()
         {
             int _id = 100;
-
             foreach (Customer c in this)
             {
                 if (c.CustomerID > _id)
@@ -100,7 +132,11 @@ namespace TSS.BankingApp.BL
                 { _id++; }
             }
             return _id;
-            
+        }
+
+        public void SaveToXML()
+        {
+            //DataAccess.SaveXml(typeof(CustomerCollection), this);
         }
     }
 }

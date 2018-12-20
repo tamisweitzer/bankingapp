@@ -50,6 +50,11 @@
             this.dtBirthDate = new System.Windows.Forms.DateTimePicker();
             this.lblTempTable = new System.Windows.Forms.Label();
             this.dgvTempTable = new System.Windows.Forms.DataGridView();
+            this.btnClear = new System.Windows.Forms.Button();
+            this.btnSaveToXML = new System.Windows.Forms.Button();
+            this.btnLoadFromXML = new System.Windows.Forms.Button();
+            this.btnSaveToDB = new System.Windows.Forms.Button();
+            this.btnReadFromDB = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDeposits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvWithdrawls)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTempTable)).BeginInit();
@@ -63,7 +68,7 @@
             this.lstbxCustomersList.Location = new System.Drawing.Point(24, 20);
             this.lstbxCustomersList.Margin = new System.Windows.Forms.Padding(2);
             this.lstbxCustomersList.Name = "lstbxCustomersList";
-            this.lstbxCustomersList.Size = new System.Drawing.Size(280, 276);
+            this.lstbxCustomersList.Size = new System.Drawing.Size(216, 276);
             this.lstbxCustomersList.TabIndex = 0;
             this.lstbxCustomersList.SelectedIndexChanged += new System.EventHandler(this.lstbxCustomersList_SelectedIndexChanged_1);
             // 
@@ -93,7 +98,7 @@
             // 
             this.lblID.BackColor = System.Drawing.SystemColors.Control;
             this.lblID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblID.Location = new System.Drawing.Point(355, 20);
+            this.lblID.Location = new System.Drawing.Point(353, 26);
             this.lblID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblID.MinimumSize = new System.Drawing.Size(75, 16);
             this.lblID.Name = "lblID";
@@ -106,7 +111,7 @@
             // 
             this.lblDisplayID.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDisplayID.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplayID.Location = new System.Drawing.Point(466, 19);
+            this.lblDisplayID.Location = new System.Drawing.Point(464, 25);
             this.lblDisplayID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisplayID.Name = "lblDisplayID";
             this.lblDisplayID.Size = new System.Drawing.Size(150, 23);
@@ -115,7 +120,7 @@
             // lblFirstName
             // 
             this.lblFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblFirstName.Location = new System.Drawing.Point(355, 58);
+            this.lblFirstName.Location = new System.Drawing.Point(353, 64);
             this.lblFirstName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblFirstName.MinimumSize = new System.Drawing.Size(75, 16);
             this.lblFirstName.Name = "lblFirstName";
@@ -127,7 +132,7 @@
             // lblLastName
             // 
             this.lblLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblLastName.Location = new System.Drawing.Point(356, 94);
+            this.lblLastName.Location = new System.Drawing.Point(354, 100);
             this.lblLastName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblLastName.MinimumSize = new System.Drawing.Size(75, 16);
             this.lblLastName.Name = "lblLastName";
@@ -139,7 +144,7 @@
             // lblSSN
             // 
             this.lblSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSSN.Location = new System.Drawing.Point(358, 132);
+            this.lblSSN.Location = new System.Drawing.Point(356, 138);
             this.lblSSN.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblSSN.MinimumSize = new System.Drawing.Size(75, 16);
             this.lblSSN.Name = "lblSSN";
@@ -151,7 +156,7 @@
             // lblBirthDate
             // 
             this.lblBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBirthDate.Location = new System.Drawing.Point(358, 169);
+            this.lblBirthDate.Location = new System.Drawing.Point(356, 175);
             this.lblBirthDate.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblBirthDate.MinimumSize = new System.Drawing.Size(75, 16);
             this.lblBirthDate.Name = "lblBirthDate";
@@ -163,7 +168,7 @@
             // txtFirstName
             // 
             this.txtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtFirstName.Location = new System.Drawing.Point(466, 57);
+            this.txtFirstName.Location = new System.Drawing.Point(464, 63);
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.Size = new System.Drawing.Size(152, 24);
@@ -172,7 +177,7 @@
             // txtLastName
             // 
             this.txtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtLastName.Location = new System.Drawing.Point(466, 94);
+            this.txtLastName.Location = new System.Drawing.Point(464, 100);
             this.txtLastName.Margin = new System.Windows.Forms.Padding(2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.Size = new System.Drawing.Size(152, 24);
@@ -181,7 +186,7 @@
             // txtSSN
             // 
             this.txtSSN.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSSN.Location = new System.Drawing.Point(466, 132);
+            this.txtSSN.Location = new System.Drawing.Point(464, 138);
             this.txtSSN.Margin = new System.Windows.Forms.Padding(2);
             this.txtSSN.Name = "txtSSN";
             this.txtSSN.Size = new System.Drawing.Size(152, 24);
@@ -190,7 +195,7 @@
             // lblAge
             // 
             this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAge.Location = new System.Drawing.Point(358, 206);
+            this.lblAge.Location = new System.Drawing.Point(356, 212);
             this.lblAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblAge.Name = "lblAge";
             this.lblAge.Size = new System.Drawing.Size(83, 23);
@@ -202,7 +207,7 @@
             // 
             this.lblDisplayAge.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblDisplayAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDisplayAge.Location = new System.Drawing.Point(466, 206);
+            this.lblDisplayAge.Location = new System.Drawing.Point(464, 212);
             this.lblDisplayAge.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblDisplayAge.Name = "lblDisplayAge";
             this.lblDisplayAge.Size = new System.Drawing.Size(150, 23);
@@ -231,9 +236,9 @@
             // btnAddCustomer
             // 
             this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAddCustomer.Location = new System.Drawing.Point(325, 249);
+            this.btnAddCustomer.Location = new System.Drawing.Point(334, 251);
             this.btnAddCustomer.Name = "btnAddCustomer";
-            this.btnAddCustomer.Size = new System.Drawing.Size(93, 47);
+            this.btnAddCustomer.Size = new System.Drawing.Size(84, 45);
             this.btnAddCustomer.TabIndex = 17;
             this.btnAddCustomer.Text = "Add";
             this.btnAddCustomer.UseVisualStyleBackColor = true;
@@ -242,9 +247,9 @@
             // btnUpdateCustomer
             // 
             this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdateCustomer.Location = new System.Drawing.Point(424, 249);
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(433, 251);
             this.btnUpdateCustomer.Name = "btnUpdateCustomer";
-            this.btnUpdateCustomer.Size = new System.Drawing.Size(93, 47);
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(84, 45);
             this.btnUpdateCustomer.TabIndex = 18;
             this.btnUpdateCustomer.Text = "Update";
             this.btnUpdateCustomer.UseVisualStyleBackColor = true;
@@ -253,9 +258,9 @@
             // btnDelete
             // 
             this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDelete.Location = new System.Drawing.Point(523, 249);
+            this.btnDelete.Location = new System.Drawing.Point(532, 251);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(93, 47);
+            this.btnDelete.Size = new System.Drawing.Size(84, 45);
             this.btnDelete.TabIndex = 19;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -265,7 +270,7 @@
             // 
             this.dtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtBirthDate.Location = new System.Drawing.Point(466, 170);
+            this.dtBirthDate.Location = new System.Drawing.Point(464, 176);
             this.dtBirthDate.Name = "dtBirthDate";
             this.dtBirthDate.Size = new System.Drawing.Size(150, 22);
             this.dtBirthDate.TabIndex = 20;
@@ -289,14 +294,74 @@
             this.dgvTempTable.Margin = new System.Windows.Forms.Padding(2);
             this.dgvTempTable.Name = "dgvTempTable";
             this.dgvTempTable.RowTemplate.Height = 33;
-            this.dgvTempTable.Size = new System.Drawing.Size(592, 199);
+            this.dgvTempTable.Size = new System.Drawing.Size(592, 71);
             this.dgvTempTable.TabIndex = 21;
+            // 
+            // btnClear
+            // 
+            this.btnClear.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClear.Location = new System.Drawing.Point(244, 251);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(84, 45);
+            this.btnClear.TabIndex = 23;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
+            // btnSaveToXML
+            // 
+            this.btnSaveToXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveToXML.Location = new System.Drawing.Point(24, 752);
+            this.btnSaveToXML.Name = "btnSaveToXML";
+            this.btnSaveToXML.Size = new System.Drawing.Size(135, 52);
+            this.btnSaveToXML.TabIndex = 24;
+            this.btnSaveToXML.Text = "Save to XML";
+            this.btnSaveToXML.UseVisualStyleBackColor = true;
+            this.btnSaveToXML.Click += new System.EventHandler(this.btnSaveToXML_Click);
+            // 
+            // btnLoadFromXML
+            // 
+            this.btnLoadFromXML.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLoadFromXML.Location = new System.Drawing.Point(165, 752);
+            this.btnLoadFromXML.Name = "btnLoadFromXML";
+            this.btnLoadFromXML.Size = new System.Drawing.Size(135, 52);
+            this.btnLoadFromXML.TabIndex = 25;
+            this.btnLoadFromXML.Text = "Load From XML";
+            this.btnLoadFromXML.UseVisualStyleBackColor = true;
+            this.btnLoadFromXML.Click += new System.EventHandler(this.btnLoadFromXML_Click);
+            // 
+            // btnSaveToDB
+            // 
+            this.btnSaveToDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveToDB.Location = new System.Drawing.Point(340, 752);
+            this.btnSaveToDB.Name = "btnSaveToDB";
+            this.btnSaveToDB.Size = new System.Drawing.Size(135, 52);
+            this.btnSaveToDB.TabIndex = 26;
+            this.btnSaveToDB.Text = "Save to DB";
+            this.btnSaveToDB.UseVisualStyleBackColor = true;
+            this.btnSaveToDB.Click += new System.EventHandler(this.btnSaveToDB_Click);
+            // 
+            // btnReadFromDB
+            // 
+            this.btnReadFromDB.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReadFromDB.Location = new System.Drawing.Point(481, 752);
+            this.btnReadFromDB.Name = "btnReadFromDB";
+            this.btnReadFromDB.Size = new System.Drawing.Size(135, 52);
+            this.btnReadFromDB.TabIndex = 27;
+            this.btnReadFromDB.Text = "Read From DB";
+            this.btnReadFromDB.UseVisualStyleBackColor = true;
+            this.btnReadFromDB.Click += new System.EventHandler(this.btnReadFromDB_Click);
             // 
             // BankingAppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(650, 851);
+            this.Controls.Add(this.btnReadFromDB);
+            this.Controls.Add(this.btnSaveToDB);
+            this.Controls.Add(this.btnLoadFromXML);
+            this.Controls.Add(this.btnSaveToXML);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.lblTempTable);
             this.Controls.Add(this.dgvTempTable);
             this.Controls.Add(this.dtBirthDate);
@@ -356,6 +421,11 @@
         private System.Windows.Forms.DateTimePicker dtBirthDate;
         private System.Windows.Forms.Label lblTempTable;
         private System.Windows.Forms.DataGridView dgvTempTable;
+        private System.Windows.Forms.Button btnClear;
+        private System.Windows.Forms.Button btnSaveToXML;
+        private System.Windows.Forms.Button btnLoadFromXML;
+        private System.Windows.Forms.Button btnSaveToDB;
+        private System.Windows.Forms.Button btnReadFromDB;
     }
 }
 

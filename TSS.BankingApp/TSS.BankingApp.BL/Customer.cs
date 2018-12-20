@@ -45,7 +45,14 @@ namespace TSS.BankingApp.BL
             LastName = lastname;
             SSN = ssn;
             BirthDate = birthdate;
+        }
 
+        public Customer(DataRow row)
+        {
+            CustomerID = Convert.ToInt32(row["CustomerID"]);
+
+            Deposits = new List<Deposit>();
+            Withdrawls = new List<Withdrawl>();
         }
 
 
