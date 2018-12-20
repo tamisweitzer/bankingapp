@@ -24,6 +24,7 @@ namespace TSS.BankingApp.BL
        // Constructors
        public Person()
         {
+            
         }
 
 

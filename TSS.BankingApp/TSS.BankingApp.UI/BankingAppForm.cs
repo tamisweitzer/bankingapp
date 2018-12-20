@@ -22,53 +22,72 @@ namespace TSS.BankingApp.UI
         {
             customers.Populate();
             RebindCustomers();
-            // TODO
-            // This isn't right yet. Data populates, 
-            // but this does not create a list of withdrawls and deposits
-
+            
+            // Deposit Table
             DataTable dt = new DataTable();
-            //dt.Columns.Add("FirstName");
+            dt.Columns.Add("ID");
             dt.Columns.Add("LastName");
-            //dt.Columns.Add("SSN");
-            //dt.Columns.Add("Birthdate");
-            dt.Columns.Add("LastDeposit");
-            //dt.Columns.Add("DepositID");
-            //dt.Columns.Add("Amount");
-            //dt.Columns.Add("Date");
+            //dt.Columns.Add("LastDeposit");
+            dt.Columns.Add("BirthDate");
 
             foreach (var i in customers)
             {
                 dt.Rows.Add(new object[] {
+                    i.CustomerID,
                     i.LastName,
-                    i.LastDeposit.Amount.ToString("c")
-                    
+                    //i.LastDeposit.Amount.ToString(),
+                    i.BirthDate.ToShortDateString()                    
                 });
             }
             DgvDeposits.DataSource = dt;
 
 
             // Withdrawl table
-            // TODO turn these two into a method
             DataTable dt2 = new DataTable();
-            dt2.Columns.Add("FirsttName");
-            dt2.Columns.Add("LastName");
-            dt2.Columns.Add("SSN");
-            dt2.Columns.Add("Birthdate");
-            dt2.Columns.Add("LastWithdrawl");
-            dt2.Columns.Add("LastDeposit");
+            dt2.Columns.Add("ID");
+            dt2.Columns.Add("FullName");
+           // dt.Columns.Add("Last Withdrawl");
+            //dt2.Columns.Add("Date");
+
 
             foreach (var i in customers)
             {
                 dt2.Rows.Add(new object[] {
-                    i.FirstName,
-                    i.LastName,
-                    i.SSN,
-                    i.BirthDate.ToShortDateString(),
-                    i.LastWithdrawl.Amount.ToString("c"),
-                    i.LastDeposit.Amount.ToString("c")
+                    i.CustomerID,
+                    i.FullName
+                    //i.LastWithdrawl.Amount.ToString("c"),
+                    //i.LastDeposit.Amount.ToString("c"),
+                    //i.LastDeposit.DepositDate.ToString()
                 });
             }
             DgvWithdrawls.DataSource = dt2;
+
+
+            // TEMPORARY TABLE
+            //  Deposit Table
+            DataTable dtemp = new DataTable();
+            dtemp.Columns.Add("ID");
+            dtemp.Columns.Add("FirstName");
+            dtemp.Columns.Add("LastName");
+            dtemp.Columns.Add("BirthDate");
+            dtemp.Columns.Add("LastDeposit");
+            dtemp.Columns.Add("LastWithdrawl");
+            
+
+            foreach (var i in customers)
+            {
+                dtemp.Rows.Add(new object[] {
+                    i.CustomerID,
+                    i.FirstName,
+                    i.LastName,
+                    i.BirthDate.ToShortDateString(),
+                    //i.LastDeposit.DepositAmount.ToString(), //BUG 'Object reference not set to an instance of an object.'
+                    //i.LastWithdrawl.Amount.ToString() //BUG 'Object reference not set to an instance of an object.'
+         
+                }); 
+                   
+            }
+            dgvTempTable.DataSource = dtemp;
         }
 
 
@@ -99,11 +118,40 @@ namespace TSS.BankingApp.UI
                 txtFirstName.Text = selected.FirstName;
                 txtLastName.Text = selected.LastName;
                 txtSSN.Text = selected.SSN;
-                txtBirthDate.Text = (selected.BirthDate).ToShortDateString();
+                dtBirthDate.Text = (selected.BirthDate).ToShortDateString();
                 lblDisplayAge.Text = (DateTime.Now.Year - selected.BirthDate.Year).ToString();
 
                 RebindCustomers(selected);
             }
+
+            
+        }
+
+        
+
+        private void btnAddCustomer_Click(object sender, EventArgs e)
+        {
+            int id = customers.IncrementID();
+        
+            Customer c = new Customer();
+            c.CustomerID = id;
+            c.FirstName = txtFirstName.Text;
+            c.LastName = txtLastName.Text;
+            c.SSN = txtSSN.Text;
+            c.BirthDate = dtBirthDate.Value;
+            customers.Add(c);                      
+        }
+
+
+        private void btnUpdateCustomer_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -13,54 +13,40 @@ namespace TSS.BankingApp.BL
         private DataRow datarow;
         private object DisplayName;
 
-
+               
         // Properties
         public int CustomerID { get; set; }
         public Deposit LastDeposit { get; set; }
         public Withdrawl LastWithdrawl { get; set; }
-        public List<Deposit> DepositList { get; set; }
-        public List<Withdrawl> WithdrawlList { get; set; }
+        public List<Deposit> Deposits { get; set; }
+        public List<Withdrawl> Withdrawls { get; set; }
        
 
         // Constructors 
         public Customer()
         {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
+            Deposits = new List<Deposit>();
+            Withdrawls = new List<Withdrawl>();
         }
 
         public Customer(int customerid)
         {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
+            Deposits = new List<Deposit>();
+            Withdrawls = new List<Withdrawl>();
             CustomerID = customerid;
         }
 
-        public Customer(int customerid, Deposit lastdeposit)
+        public Customer(int customerid, string firstname, string lastname, string ssn, DateTime birthdate )
         {
-            DepositList = new List<Deposit>();
-            WithdrawlList = new List<Withdrawl>();
+            Deposits = new List<Deposit>();
+            Withdrawls = new List<Withdrawl>();
             CustomerID = customerid;
-            LastDeposit = lastdeposit;
+            FirstName = firstname;
+            LastName = lastname;
+            SSN = ssn;
+            BirthDate = birthdate;
+
         }
-
-        //public Customer(int customerid, Withdrawl lastwithdrawl)
-        //{
-        //    DepositList = new List<Deposit>();
-        //    WithdrawlList = new List<Withdrawl>();
-        //    CustomerID = customerid;
-        //    LastWithdrawl = lastwithdrawl;
-        //}
-
-        //public Customer(int customerid, Deposit lastdeposit, Withdrawl lastwithdrawl)
-        //{
-        //    DepositList = new List<Deposit>();
-        //    WithdrawlList = new List<Withdrawl>();
-        //    CustomerID = customerid;
-        //    LastDeposit = lastdeposit;
-        //    LastWithdrawl = lastwithdrawl;
-
-        //}
 
 
 

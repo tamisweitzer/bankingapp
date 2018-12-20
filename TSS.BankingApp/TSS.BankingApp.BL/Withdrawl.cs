@@ -11,11 +11,15 @@ namespace TSS.BankingApp.BL
         
         public int WithdrawlID { get; set; }
         public double Amount { get; set; }
-        public DateTime Date { get; set; }
+        public DateTime WithdrawlDate { get; set; }
+
+        public Withdrawl() { } 
 
         public Withdrawl(double amount)
         {
-            Amount = amount;
+           Amount = amount;
         }
     }
+
+    
 }

@@ -42,11 +42,17 @@
             this.txtSSN = new System.Windows.Forms.TextBox();
             this.lblAge = new System.Windows.Forms.Label();
             this.lblDisplayAge = new System.Windows.Forms.Label();
-            this.txtBirthDate = new System.Windows.Forms.TextBox();
             this.LblWithdrawls = new System.Windows.Forms.Label();
             this.LblDeposits = new System.Windows.Forms.Label();
+            this.btnAddCustomer = new System.Windows.Forms.Button();
+            this.btnUpdateCustomer = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.dtBirthDate = new System.Windows.Forms.DateTimePicker();
+            this.lblTempTable = new System.Windows.Forms.Label();
+            this.dgvTempTable = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.DgvDeposits)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvWithdrawls)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTempTable)).BeginInit();
             this.SuspendLayout();
             // 
             // lstbxCustomersList
@@ -57,7 +63,7 @@
             this.lstbxCustomersList.Location = new System.Drawing.Point(24, 20);
             this.lstbxCustomersList.Margin = new System.Windows.Forms.Padding(2);
             this.lstbxCustomersList.Name = "lstbxCustomersList";
-            this.lstbxCustomersList.Size = new System.Drawing.Size(280, 259);
+            this.lstbxCustomersList.Size = new System.Drawing.Size(280, 276);
             this.lstbxCustomersList.TabIndex = 0;
             this.lstbxCustomersList.SelectedIndexChanged += new System.EventHandler(this.lstbxCustomersList_SelectedIndexChanged_1);
             // 
@@ -65,7 +71,7 @@
             // 
             this.DgvDeposits.AllowUserToOrderColumns = true;
             this.DgvDeposits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvDeposits.Location = new System.Drawing.Point(24, 325);
+            this.DgvDeposits.Location = new System.Drawing.Point(24, 316);
             this.DgvDeposits.Margin = new System.Windows.Forms.Padding(2);
             this.DgvDeposits.Name = "DgvDeposits";
             this.DgvDeposits.RowTemplate.Height = 33;
@@ -76,7 +82,7 @@
             // 
             this.DgvWithdrawls.AllowUserToOrderColumns = true;
             this.DgvWithdrawls.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DgvWithdrawls.Location = new System.Drawing.Point(24, 494);
+            this.DgvWithdrawls.Location = new System.Drawing.Point(24, 472);
             this.DgvWithdrawls.Margin = new System.Windows.Forms.Padding(2);
             this.DgvWithdrawls.Name = "DgvWithdrawls";
             this.DgvWithdrawls.RowTemplate.Height = 33;
@@ -202,20 +208,11 @@
             this.lblDisplayAge.Size = new System.Drawing.Size(150, 23);
             this.lblDisplayAge.TabIndex = 13;
             // 
-            // txtBirthDate
-            // 
-            this.txtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtBirthDate.Location = new System.Drawing.Point(466, 168);
-            this.txtBirthDate.Margin = new System.Windows.Forms.Padding(2);
-            this.txtBirthDate.Name = "txtBirthDate";
-            this.txtBirthDate.Size = new System.Drawing.Size(152, 24);
-            this.txtBirthDate.TabIndex = 14;
-            // 
             // LblWithdrawls
             // 
             this.LblWithdrawls.AutoSize = true;
             this.LblWithdrawls.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblWithdrawls.Location = new System.Drawing.Point(21, 474);
+            this.LblWithdrawls.Location = new System.Drawing.Point(21, 452);
             this.LblWithdrawls.Name = "LblWithdrawls";
             this.LblWithdrawls.Size = new System.Drawing.Size(81, 18);
             this.LblWithdrawls.TabIndex = 15;
@@ -225,20 +222,89 @@
             // 
             this.LblDeposits.AutoSize = true;
             this.LblDeposits.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblDeposits.Location = new System.Drawing.Point(21, 305);
+            this.LblDeposits.Location = new System.Drawing.Point(21, 296);
             this.LblDeposits.Name = "LblDeposits";
             this.LblDeposits.Size = new System.Drawing.Size(67, 18);
             this.LblDeposits.TabIndex = 16;
             this.LblDeposits.Text = "Deposits";
             // 
+            // btnAddCustomer
+            // 
+            this.btnAddCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddCustomer.Location = new System.Drawing.Point(325, 249);
+            this.btnAddCustomer.Name = "btnAddCustomer";
+            this.btnAddCustomer.Size = new System.Drawing.Size(93, 47);
+            this.btnAddCustomer.TabIndex = 17;
+            this.btnAddCustomer.Text = "Add";
+            this.btnAddCustomer.UseVisualStyleBackColor = true;
+            this.btnAddCustomer.Click += new System.EventHandler(this.btnAddCustomer_Click);
+            // 
+            // btnUpdateCustomer
+            // 
+            this.btnUpdateCustomer.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnUpdateCustomer.Location = new System.Drawing.Point(424, 249);
+            this.btnUpdateCustomer.Name = "btnUpdateCustomer";
+            this.btnUpdateCustomer.Size = new System.Drawing.Size(93, 47);
+            this.btnUpdateCustomer.TabIndex = 18;
+            this.btnUpdateCustomer.Text = "Update";
+            this.btnUpdateCustomer.UseVisualStyleBackColor = true;
+            this.btnUpdateCustomer.Click += new System.EventHandler(this.btnUpdateCustomer_Click);
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDelete.Location = new System.Drawing.Point(523, 249);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(93, 47);
+            this.btnDelete.TabIndex = 19;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // dtBirthDate
+            // 
+            this.dtBirthDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtBirthDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtBirthDate.Location = new System.Drawing.Point(466, 170);
+            this.dtBirthDate.Name = "dtBirthDate";
+            this.dtBirthDate.Size = new System.Drawing.Size(150, 22);
+            this.dtBirthDate.TabIndex = 20;
+            this.dtBirthDate.Value = new System.DateTime(2018, 12, 19, 18, 59, 52, 0);
+            // 
+            // lblTempTable
+            // 
+            this.lblTempTable.AutoSize = true;
+            this.lblTempTable.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTempTable.Location = new System.Drawing.Point(21, 621);
+            this.lblTempTable.Name = "lblTempTable";
+            this.lblTempTable.Size = new System.Drawing.Size(85, 18);
+            this.lblTempTable.TabIndex = 22;
+            this.lblTempTable.Text = "Temp_table";
+            // 
+            // dgvTempTable
+            // 
+            this.dgvTempTable.AllowUserToOrderColumns = true;
+            this.dgvTempTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTempTable.Location = new System.Drawing.Point(24, 641);
+            this.dgvTempTable.Margin = new System.Windows.Forms.Padding(2);
+            this.dgvTempTable.Name = "dgvTempTable";
+            this.dgvTempTable.RowTemplate.Height = 33;
+            this.dgvTempTable.Size = new System.Drawing.Size(592, 199);
+            this.dgvTempTable.TabIndex = 21;
+            // 
             // BankingAppForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(655, 651);
+            this.ClientSize = new System.Drawing.Size(650, 851);
+            this.Controls.Add(this.lblTempTable);
+            this.Controls.Add(this.dgvTempTable);
+            this.Controls.Add(this.dtBirthDate);
+            this.Controls.Add(this.btnDelete);
+            this.Controls.Add(this.btnUpdateCustomer);
+            this.Controls.Add(this.btnAddCustomer);
             this.Controls.Add(this.LblDeposits);
             this.Controls.Add(this.LblWithdrawls);
-            this.Controls.Add(this.txtBirthDate);
             this.Controls.Add(this.lblDisplayAge);
             this.Controls.Add(this.lblAge);
             this.Controls.Add(this.txtSSN);
@@ -260,6 +326,7 @@
             this.Load += new System.EventHandler(this.BankingAppForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DgvDeposits)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DgvWithdrawls)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTempTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -281,9 +348,14 @@
         private System.Windows.Forms.TextBox txtSSN;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label lblDisplayAge;
-        private System.Windows.Forms.TextBox txtBirthDate;
         private System.Windows.Forms.Label LblWithdrawls;
         private System.Windows.Forms.Label LblDeposits;
+        private System.Windows.Forms.Button btnAddCustomer;
+        private System.Windows.Forms.Button btnUpdateCustomer;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.DateTimePicker dtBirthDate;
+        private System.Windows.Forms.Label lblTempTable;
+        private System.Windows.Forms.DataGridView dgvTempTable;
     }
 }
 

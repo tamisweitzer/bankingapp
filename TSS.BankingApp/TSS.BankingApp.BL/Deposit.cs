@@ -7,18 +7,21 @@ using System.Threading.Tasks;
 namespace TSS.BankingApp.BL
 {
     public class Deposit
-    {
-        
+    {        
         public int DepositID { get; set; }
-        public double Amount { get; set; }
-        public DateTime Date { get; set; }
+        public double DepositAmount { get; set; }
+        public DateTime DepositDate { get; set; }
 
 
-        public Deposit(double amount)
+        public Deposit() { }
+
+        public Deposit(double depositamount, DateTime depositdate)
         {
-            Amount = amount;
+            DepositAmount = depositamount;
+            DepositDate = depositdate;
         }
 
         
+
     }
 }

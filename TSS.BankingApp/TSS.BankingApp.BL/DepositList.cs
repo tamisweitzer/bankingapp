@@ -6,28 +6,22 @@ using System.Threading.Tasks;
 
 namespace TSS.BankingApp.BL
 {
-    public delegate void WithdrawlItemAdded();
-
-
-    public class WithdrawlList: List<Withdrawl>
+    public class DepositList : List<Deposit>
     {
-        public WithdrawlItemAdded OnWithrdrawlItemAdded { get; set; }
-
-        public void PopulateWithdrawlItems()
+        public static void Add()
         {
-
+            
         }
-
 
 
         public int IncrementID()
         {
             int _id = 100;
 
-            foreach (Withdrawl w in this)
+            foreach (Deposit d in this)
             {
-                if (w.WithdrawlID > _id)
-                { _id = w.WithdrawlID; }
+                if (d.DepositID > _id)
+                { _id = d.DepositID; }
                 else
                 { _id++; }
             }
