@@ -1,0 +1,10 @@
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.csprojAssemblyReference.cache
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.Form1.resources
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.Properties.Resources.resources
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.csproj.GenerateResource.cache
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.csproj.CoreCompileInputs.cache
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\bin\Debug\StandAloneProject.exe.config
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\bin\Debug\StandAloneProject.exe
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\bin\Debug\StandAloneProject.pdb
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.exe
+C:\repos\bankingapp\TSS.BankingApp\StandAloneProject\obj\Debug\StandAloneProject.pdb
